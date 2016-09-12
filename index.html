@@ -3,57 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <link rel="stylesheet" href="dist/style.css"/>
     </head>
     <body>
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                outline: 0;
-            }
-            html, body {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                background-color:black;
-                background-image: -webkit-linear-gradient(top, #92a8d1 20%, #f6cbca 100%);
-            }
-            .div-error-code{
-                position: absolute;
-                top: 50%;
-                z-index:999;
-                opacity: 2;
-                font-size: 72px;
-                display: block;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                text-align: center;
-                width: 50%;
-                margin: 0 auto;
-                color: white;
-                font-weight: 100;
-                font-family: "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            
-            }
-            .div-error-txt{
-                position: absolute;
-                color: white;
-                opacity: 2;
-                font-size: 24px;
-                top: 90%;
-                z-index: 10;
-                display: block;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                text-align: center;
-                width: 50%;
-                margin: 0 auto;
-                font-family: 'Quicksand';
-            }
-        </style>
         <div class="div-error-code" onload>404</div>
         <div class='div-error-txt'>Oops! Page not found</div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
