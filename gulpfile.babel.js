@@ -23,7 +23,7 @@ gulp.task('serve', ['scripts', 'sass'],()=> {
 		}
 	})
 	gulp.watch('./src/*.js',['scripts']);
-		gulp.watch('./src/*.scss', ['sass']);
+	gulp.watch('./src/*.scss', ['sass']);
 });
 gulp.task('sass', function () {
 	return gulp.src('./src/**/*.scss')
