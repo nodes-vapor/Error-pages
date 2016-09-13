@@ -8,7 +8,17 @@ html, body {
   height: 100%;
   overflow: hidden;
   background-color: black;
-  background-image: -webkit-linear-gradient(top, #92a8d1 20%, #f6cbca 100%); }
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top, #92a8d1 20%, #f6cbca 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #92a8d1 20%, #f6cbca 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #92a8d1 20%, #f6cbca 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20, #92a8d1), color-stop(100, #f6cbca));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #92a8d1 20%, #f6cbca 100%);
+  background-image: linear-gradient(to bottom, #92a8d1 20%, #f6cbca 100%); }
 
 .div-error-code {
   position: absolute;
