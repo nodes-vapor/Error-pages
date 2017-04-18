@@ -1,4 +1,4 @@
-Vapor error page design
+# Vapor error page design
 
 Usage:
  Install npm, grunt globally:
